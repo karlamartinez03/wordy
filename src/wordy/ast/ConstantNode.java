@@ -19,6 +19,7 @@ public final class ConstantNode extends ExpressionNode {
     @Override
     protected double doEvaluate(EvaluationContext context){
         return value;
+
     }
 
     @Override
