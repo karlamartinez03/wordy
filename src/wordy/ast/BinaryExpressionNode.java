@@ -67,20 +67,12 @@ public class BinaryExpressionNode extends ExpressionNode {
         double left = lhs.evaluate(context);
         double right = rhs.evaluate(context);
 
-        switch (operator){
-            case ADDITION:
-                return left + right;
-            case SUBTRACTION:
-                return left - right;
-            case MULTIPLICATION:
-                return left * right;
-            case DIVISION:
-                return left / right;
-            case EXPONENTIATION:
-                return Math.pow(left, right);
-            default:
-                throw new UnsupportedOperationException("Unknown operator: " + operator);
-
-        }
+        return switch (operator){
+            case ADDITION -> left + right;
+            case SUBTRACTION -> left - right;
+            case MULTIPLICATION -> left * right;
+            case DIVISION -> left / right;
+            case EXPONENTIATION -> Math.pow(left, right);
+        };
     }
 }
