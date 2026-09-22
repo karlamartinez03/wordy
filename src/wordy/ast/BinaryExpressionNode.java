@@ -98,6 +98,7 @@ public class BinaryExpressionNode extends ExpressionNode {
             rhs.compile(out);
             out.print(")");
         }
+
     }
 
 }
