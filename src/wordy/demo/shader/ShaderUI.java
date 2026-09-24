@@ -24,6 +24,7 @@ import wordy.parser.WordyParser;
  */
 public class ShaderUI {
     private static final boolean USE_COMPILER = false;
+    //compiler takes 49ms when set to true but takes 140ms with no compiler (set to false)
 
     private final StatementNode program;
     private final BufferedImage image;
