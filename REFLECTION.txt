@@ -1,0 +1,4 @@
+After looking through Paul's solutions I was happy to see that his implementation and mine are functionally very similar.
+Outside of that, the main differences are stylistic, such as in the compile method in BinaryExpressionNode. I chose to use an if/else statement while the sample solution uses a return that skips past that else block.
+One thing this comparison highlighted is how much the interpreter and compiler implementations mirror each other structurally, despite doing fundamentally different things.
+It was interesting to see first hand what makes some languages faster within the operating system and how these are built.
